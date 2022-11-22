@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Produces a full stack application with React, Express/Node, MongoDB
 
 function writeBabelRC {
@@ -720,8 +719,8 @@ function generateApp {
   createFiles "" "${globalFiles[@]}"
   createFiles "config" "${configFiles[@]}"
   createFiles "src" "${srcFiles[@]}"
-  createFiles "scr/screens" "${srcScreenFiles[@]}"
-  createFiles "scr/components" "${srcComponentFiles[@]}"
+  createFiles "src/screens" "${srcScreenFiles[@]}"
+  createFiles "src/components" "${srcComponentFiles[@]}"
   touch routes/index.js
   touch models/user.js
 
@@ -734,4 +733,4 @@ function generateApp {
   echo "Application setup complete"
 }
 
-generateApp $1 # main
+# generateApp $1 # main
